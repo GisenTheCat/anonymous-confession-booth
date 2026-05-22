@@ -24,6 +24,14 @@ window.addEventListener("DOMContentLoaded", () => {
     function submit() {
         window.submissions++;
         window.localStorage.setItem("submissions", window.submissions);
+        let confession = confessionTextArea.value.trim();
+        fetch("https://ptb.discord.com/api/webhooks/1507291520934346754/MeCwzeMD9Rr6RI7aXXq0SJc6HQB7hZvuMJdqyAaNIm5KCg4vzb4YU4-rIIETiJJMdSEA", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify({ content: confession + (window.submissions > 3 ? `\n-# Submissions: ${window.submissions}` : "") }),
+        });
         confessionTextArea.value = "";
     }
 });
