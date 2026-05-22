@@ -1,0 +1,36 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #4b4c58;
+}
+#confession {
+    width: 80%;
+    height: 200px;
+    margin: 20px auto;
+    display: block;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    background-color: #35363e;
+}
+#submit {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#submit:hover {
+    background-color: #0056b3;
+}
+#submit:disabled {
+    background-color: #6c757d;
+    cursor: not-allowed;
+}
