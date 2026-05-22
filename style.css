@@ -15,6 +15,7 @@ body {
     border-radius: 5px;
     border: none;
     background-color: #35363e;
+    color: #fff;
 }
 #submit {
     display: block;
