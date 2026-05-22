@@ -9,9 +9,10 @@ window.addEventListener("DOMContentLoaded", () => {
         if (event.key === "Enter") {
             event.preventDefault();
             showSubmitConfirmation();
-        } else {
-            submitButton.disabled = confessionTextArea.value.trim() === "";
         }
+    });
+    confessionTextArea.addEventListener("input", () => {
+        submitButton.disabled = confessionTextArea.value.trim() === "";
     });
 
     function showSubmitConfirmation() {
