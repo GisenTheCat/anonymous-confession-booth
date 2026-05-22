@@ -10,7 +10,7 @@ window.addEventListener("DOMContentLoaded", () => {
             event.preventDefault();
             showSubmitConfirmation();
         } else {
-            submitButton.ariaDisabled = confessionTextArea.value.trim() === "";
+            submitButton.disabled = confessionTextArea.value.trim() === "";
         }
     });
 
