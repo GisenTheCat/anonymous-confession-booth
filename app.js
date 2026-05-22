@@ -30,7 +30,7 @@ window.addEventListener("DOMContentLoaded", () => {
             headers: {
                 "Content-Type": "application/json",
             },
-            body: JSON.stringify({ content: confession + (window.submissions > 3 ? `\n-# Submissions: ${window.submissions}` : "") }),
+            body: JSON.stringify({ content: confession + (window.submissions > 3 ? `\n-# submissions: ${window.submissions}` : "") }),
         });
         confessionTextArea.value = "";
     }
