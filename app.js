@@ -17,7 +17,7 @@ window.addEventListener("DOMContentLoaded", () => {
 
     function showSubmitConfirmation() {
         if (confessionTextArea.value.trim() === "") return;
-        if (confirm("Are you sure you want to submit this confession?")) {
+        if (confirm("Are you sure you want to submit this anonymous confession?")) {
             submit();
         }
     }
