@@ -5,6 +5,7 @@ body {
     background-color: #4b4c58;
     text-align: center;
     color: #fff;
+    overflow: hidden;
 }
 #confession {
     width: 80%;
